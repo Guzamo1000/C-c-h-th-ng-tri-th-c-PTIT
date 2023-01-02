@@ -1,12 +1,20 @@
 from chaining.backward_chaining import BackwardChaining
 from converjson import ConvertData
 def searchindexrule(rule,goal):
+    """
+    Tìm vị trí các rule có bệnh là goal
+    """
     index=[]
     for r in range(len(rule)):
         if rule[r][0]==goal:
             index.append(r)
     return index
 def get_s_in_d(answer,goal,rule,d,flag):
+    """
+    Lấy các triệu chứng theo sự suy diễn để giảm thiểu câu hỏi
+    và 
+    đánh dấu các luật đã được duyệt qua để bỏ qua những luật có cùng cùng câu hỏi vào
+    """
     result=[]
     index=[]
     if flag==1:
