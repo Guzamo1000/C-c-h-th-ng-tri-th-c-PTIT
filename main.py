@@ -46,9 +46,9 @@ def send_email(id_benh,person):
     password=None
     
     with open("password.txt",'r') as f:
-        password=f.readline()
+        password=f.read()
     email_sender = 'guzamo60@gmail.com'
-    email_password = password
+    email_password = 'paltghsckxotraim'
     email_receiver = person
 
     db=ConvertData()
