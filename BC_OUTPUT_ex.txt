@@ -1,0 +1,44 @@
+PART 1. Data
+  1) Productions
+    R1: S01,S02,S03,S04->D01
+    R2: S01,S02,S05->D01
+    R3: S01,S09,S13,S18->D01
+    R4: S01,S02,S14,S23,S25->D02
+    R5: S01,S02,S14,S24,S28->D02
+    R6: S01,S02,S14,S27,S26->D02
+    R7: S01,S02,S14,S27,S29->D02
+    R8: S01,S02,S12,S27,S28->D02
+    R9: S01,S02,S13,S27,S28->D02
+    R10: S01,S02,S22,S16->D03
+    R11: S01,S02,S22,S17->D03
+    R12: S01,S12,S22,S16->D03
+    R13: S01,S12,S22,S17->D03
+    R14: S01,S08,S13,S22,S19->D04
+    R15: S20,S01,S08,S13,S22->D04
+    R16: S01,S08,S18,S22,S19->D04
+    R17: S01,S08,S18,S22,S20->D04
+    R18: S01,S06,S10,S21,S30->D05
+    R19: S01,S06,S30,S20,S21->D05
+    R20: S01,S10,S30->D05
+    R21: S01,S30,S31->D05
+    R22: S07,S12->D06
+    R23: S07,S11,S21->D06
+    R24: S11,S12->D06
+    R25: S12,S21->D06
+
+  2) Facts
+    S01, S02, S04, S09, S03.
+
+  3) Goal
+    D01.
+
+PART 2. Execution
+  1) Goal D01. Tìm thấy luật R1:S01,S02,S03,S04->D01. Các goals mới cần chứng mình là S01, S02, S03, S04.
+  2) -Goal S01. Fact (bây giờ được cập nhật). Facts S01, S02, S04, S09, S03 and . Trả về thành công.
+  3) -Goal S02. Fact (bây giờ được cập nhật). Facts S01, S02, S04, S09, S03 and . Trả về thành công.
+  4) -Goal S03. Fact (bây giờ được cập nhật). Facts S01, S02, S04, S09, S03 and . Trả về thành công.
+  5) -Goal S04. Fact (bây giờ được cập nhật). Facts S01, S02, S04, S09, S03 and . Trả về thành công.
+
+PART 3. Results
+  1) Goal D01 derived.
+  2) Road: R1.

@@ -182,3 +182,13 @@ class ConvertData:
         # self.resulttt.append(dirtt)
         self.resulttt=dirtt
         return self.resulttt
+    def get_benh_by_id(self,id_benh):
+        for i in self.resultbenh:
+            if i["idbenh"]==id_benh:
+                return i
+        return 0
+    def get_trieuchung_by_id(self, id_trieuchung):
+        for i in self.resulttrieutrung:
+            if i["idtrieuchung"] == id_trieuchung:
+                return i
+        return 0

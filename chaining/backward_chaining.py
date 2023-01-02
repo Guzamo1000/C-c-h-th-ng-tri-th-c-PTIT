@@ -137,14 +137,7 @@ class BackwardChaining:
 
                 # print(f"-dk {dk}")
                 
-                if dk==0:
-                    # print(f"-- rule append {rule.left}")
-                    for kq in rule.left:
-                        ls_fact_use.append(kq)
                 if dk==1: #Kiểm tra nếu đúng hết các triệu chứng thì dừng vòng lặp
-                    # print(f"--{rule.left}")
-                    for kq in rule.left:
-                        ls_fact_use.append(kq)
                     ls=1 #Kiểm tra xem có fact nào có trong tập luật ban đầu không
                     break 
                 # print(f"-ls fact use {sorted(set(ls_fact_use))}")
